@@ -137,22 +137,23 @@ line-height: 140%;
 padding: 0;
 margin: 0;
 }
-button {
+.button {
      font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     width: 166px;
 height: 50px;
 border-radius: 35px;
+background: #FFD787;
 }
-button a{
+.button a{
     
     text-decoration: none;
     color: #122659;
 }
 .promo .button {
    margin-top: 45px;
-   background: #FFD787;
+ 
 }
 
 
@@ -388,6 +389,7 @@ padding: 10px;
 
 .teachers {
     margin-top: 130px;
+    margin-bottom: 130px;
     width: 970px;
    
 }
@@ -457,7 +459,157 @@ margin-top: 60px;
     margin: 0;
 }
 
-.banner-image{
+.banner{
+   background:url('img/back\ banner\ 1.png') no-repeat;
+   background-size: cover;
    width: 1366px;
    height: 453px;
+   text-align: center;
+   color: #FEFCFA;
+   margin-bottom: 130px;
+}
+.banner-title {
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 125%;
+width: 490px;
+margin: 0 auto;
+padding-top: 100px;
+padding-bottom: 35px;
+}
+.banner-text {
+    line-height: 145%;
+   padding-bottom: 40px;
+   width: 360px;
+   margin: 0 auto;
+}
+.banner-button {
+    margin-bottom: 100px;
+}
+.contacts {
+position: relative;
+height: 681px;
+}
+.contacts-text-wrapper {
+    width: 413px;
+height: 611px;
+background: #F7FAFC;
+box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+border-radius: 12px;
+position: absolute;
+left: 198px;
+z-index: 10;
+}
+.contacts-title {
+    margin: 0;
+    margin: 70px 0 50px 70px;
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+
+height: 25px;
+}
+
+.contacts-item  {
+    margin: 0;
+    margin-left: 70px;
+}
+.contacts-subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    height: 11px;
+   
+}
+.contacts-text {
+    font-weight: 500;
+font-size: 18px;
+
+margin: 0;
+margin-bottom: 35px;
+}
+.contacts-text a{
+    text-decoration: none;
+    color: #122659;
+}
+.contacts-social {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 70px;
+    display: flex;
+    
+   
+}
+.contacts-social-item {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+
+}
+.contacts-social-item a{
+    display: block;
+    
+   
+    
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contacts-social-item:nth-child(1) a {
+    background-image: url('img/icon-fb.svg');
+}
+.contacts-social-item:nth-child(2) a {
+    background-image: url('img/icon-vk.svg');
+}
+.contacts-social-item:nth-child(3) a {
+    background-image: url('img/icon-instagram.svg');
+}
+.contacts-map-wrapper {
+    background-image: url('img/map-layer-desktop@1x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1366px;
+    height: 611px;
+    position: absolute;
+    top:70px;
+
+}
+.footer {
+    width: 1366px;
+    height: 114px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #122659;
+
+}
+.rights-container{
+   
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.footer .logo {
+    padding-left: 45px;
+    
+    margin-right: 20px;
+}
+
+.rights {
+    width: 250px;
+    
+   
+}
+.confidens {
+   
+   margin-right: 50px;
 }
