@@ -29,6 +29,9 @@
       background-color:#E5E5E5;
       
   }
+  main {
+      position: relative;
+  }
   .container {
       max-width: 1366px;
       margin: 0 auto;
@@ -36,6 +39,10 @@
   .container-small {
       width: 931px;
       margin: 0 237px 0 198px;
+  }
+  *::before, 
+  *::after {
+box-sizing: border-box;
   }
   .header {
     
@@ -51,8 +58,7 @@
     width: 143px;
     height: 23px;
     padding-left: 98px;
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
+    
     margin-right: 57px;
     
   }
@@ -64,9 +70,7 @@
       padding-right: 268px;
   }
   .main-menu li{
-     
-      /* padding-top: 46px;
-padding-bottom: 45px; */
+      
       margin-right: 20px;
   }
   .main-menu li:last-child {
@@ -78,10 +82,8 @@ padding-bottom: 45px; */
   }
   .header-contact {
      
-      /* width: 195px; */
       padding-right: 98px;
-      /* padding-top: 45px; */
-      /* padding-top: 45px; */
+     
       font-family: 'Montserrat';
 font-size: 18px;
 font-style: normal;
@@ -155,6 +157,22 @@ background: #FFD787;
    margin-top: 45px;
  
 }
+.promo .container::before,
+.promo .container::after {
+  position: absolute;
+  content: "";
+}
+
+.promo .container::before {
+  width: 106px;
+  height: 84px;
+  background-image: url('img/decorate-car.svg');
+  background-size: cover;
+  left: 64px;
+top: 37px;
+ 
+  
+}
 
 
 .properties {
@@ -187,7 +205,32 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 140%;
+}
+.properties::before,
+.properties::after {
+  position: absolute;
+  content: "";
+}
 
+.properties::before {
+  width: 105px;
+  height: 115px;
+  background-image: url('img/decorate-girl.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  top: 794px;
+  left: 35px;
+}
+
+.properties::after {
+  width: 135px;
+  height: 68px;
+  background-image: url('img/decorate-rocket.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 594px;
+  right: 156px;
 }
 .types {
     margin-top: 130px;
@@ -195,7 +238,7 @@ line-height: 140%;
        height: 474px;
       
        display: flex;
-       /* border: 1px solid red; */
+      
 }
 .types-list {
     list-style: none;
@@ -271,24 +314,32 @@ transform: rotate(10deg);
     height: 126px;
     left: 640px;
     top:112px;
-    /* transform: rotate(-160deg); */
-
-}
+  }
 .arrow-right-2 {
     width: 144px;
     height: 50px;
     left: 544px;
     top: 416px;
-    
-    
+     
     transform: scale(1.6,1.6);
 
 }
 .groups {
     margin-top: 130px;
     height:803px;
-    /* border: 1px solid red; */
+  
 }
+.groups::before {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 58px;
+    top: 1924px;
+    left: 137px;
+    background-image: url('img/decorate-star.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 .groups-header {
     margin-top: 183px;
     display: flex;
@@ -391,7 +442,32 @@ padding: 10px;
     margin-top: 130px;
     margin-bottom: 130px;
     width: 970px;
-   
+   position: relative;
+}
+.teachers::before,
+.teachers::after {
+  position: absolute;
+  content: "";
+}
+
+.teachers::before {
+  width: 58px;
+  height: 97px;
+  top: -10px;
+    right: -108px;
+  background-image: url('img/decorate-house.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.teachers::after {
+  width: 44px;
+  height: 132px;
+  bottom: 0;
+    left: -102px;
+  background-image: url('img/decorate-pencil.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .teachers-header {
     
@@ -452,13 +528,32 @@ margin-top: 60px;
 .teachers-country {
     color: #677085;
     text-align: center;
-    
-  
 }
 .teachers-list-item p {
     margin: 0;
 }
-
+.slider-arrows {
+    padding-top: 50px;
+}
+.slider-arrows::before,
+.slider-arrows::after {
+position: absolute;
+content: " ";
+width: 17px;
+height: 10px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.slider-arrows::before {
+    background-image: url('img/icon-arrow-left.svg');
+    left: 463px;
+    bottom: 0;
+}
+.slider-arrows::after {
+    background-image: url('img/icon-arrow-right.svg');
+    right: 463px;
+    bottom: 0;
+}
 .banner{
    background:url('img/back\ banner\ 1.png') no-repeat;
    background-size: cover;
@@ -467,7 +562,30 @@ margin-top: 60px;
    text-align: center;
    color: #FEFCFA;
    margin-bottom: 130px;
+   position: relative;
 }
+.banner .container::before,
+.banner .container::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .container::before {
+    width: 185px;
+    height: 160px;
+    top: 90px;
+    left: 145px;
+    background-image: url('img/decorate-rainbow.svg');
+  }
+  
+  .banner .container::after {
+    width: 118px;
+    height: 133px;
+    top: 150px;
+    right: 247px;
+    background-image: url('img/decorate-boy.svg');
+  }
 .banner-title {
     font-family: 'Rubik';
 font-style: normal;
